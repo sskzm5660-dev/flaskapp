@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#f4f6f9;
+        }
+
+        .container{
+            display:flex;
+            height:100vh;
+        }
+
+        /* Sidebar */
+        .sidebar{
+            width:220px;
+            background:#2f3542;
+            color:white;
+            padding:20px;
+        }
+
+        .sidebar h2{
+            text-align:center;
+        }
+
+        .sidebar ul{
+            list-style:none;
+            padding:0;
+        }
+
+        .sidebar ul li{
+            padding:12px;
+            margin:8px 0;
+            background:#57606f;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        .sidebar ul li:hover{
+            background:#747d8c;
+        }
+
+        /* Main */
+        .main{
+            flex:1;
+            padding:20px;
+        }
+
+        .header{
+            background:white;
+            padding:15px;
+            border-radius:8px;
+            margin-bottom:20px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Cards */
+        .cards{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            gap:20px;
+            margin-bottom:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h3{
+            margin:0;
+        }
+
+        /* Table */
+        .table-container{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        table th, table td{
+            padding:12px;
+            border-bottom:1px solid #ddd;
+            text-align:left;
+        }
+
+        table th{
+            background:#f1f2f6;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li>Home</li>
+            <li>Analytics</li>
+            <li>Reports</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <div class="header">
+            <h2>Welcome to Dashboard</h2>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>120</h3>
+                <p>Total Users</p>
+            </div>
+
+            <div class="card">
+                <h3>75</h3>
+                <p>Orders</p>
+            </div>
+
+            <div class="card">
+                <h3>32</h3>
+                <p>Products</p>
+            </div>
+
+            <div class="card">
+                <h3>$540</h3>
+                <p>Revenue</p>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+            <h3>Recent Activity</h3>
+
+            <table>
+                <tr>
+                    <th>User</th>
+                    <th>Action</th>
+                    <th>Date</th>
+                </tr>
+
+                <tr>
+                    <td>John</td>
+                    <td>Created Order</td>
+                    <td>21 Apr 2026</td>
+                </tr>
+
+                <tr>
+                    <td>Alice</td>
+                    <td>Added Product</td>
+                    <td>20 Apr 2026</td>
+                </tr>
+
+                <tr>
+                    <td>Mark</td>
+                    <td>Updated Profile</td>
+                    <td>19 Apr 2026</td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
